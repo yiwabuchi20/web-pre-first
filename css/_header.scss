@@ -1,0 +1,28 @@
+.cover {
+    width: 100vw;
+    height: 111.20000000000002vw;
+    background-image: url("../images/main_sp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.catch-width{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.catch {
+    font-size:1.9rem;
+    line-height: calc(30 / 19);
+    align-items: center;
+    padding-top: calc(91px / 417px * 100%);
+    span {
+        background: linear-gradient(transparent calc(100% - 10px), $catch-pink calc(100% - 10px));
+        text-shadow: .3rem 0 0 $white;
+        font-weight: $font-black;
+    }
+    img{
+        margin:3.6rem 1.2rem;
+    }
+}

@@ -1,0 +1,63 @@
+//
+// ベースのスタイル
+//
+
+// 変数
+$white: #fff;
+$black: #000;
+$text-black: #454545;
+$stripe-gray: #f5f5f5;
+$dot-gray: #f5f5f5;
+$border-gray: #707070;
+$catch-pink: #f940bc;
+$contact-blue: #3fbcfa;
+$reserve-green: #bdfa3e;
+
+$text-blue: #454545;
+
+$font-black: 900;
+$font-midium: 400;
+
+// ベーススタイル
+html {
+  font-size: 62.5%;
+  @media(max-width:767px){
+    font-size: calc(10 / 375 * 100vw);
+  }
+}
+
+body {
+  font-family: "Noto Sans JP", "Poppins";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: $text-black;
+  background-color: $white;
+  width:100vw;
+  @media (min-width: 768px) {
+  position:relative;
+  }
+}
+
+a {
+  color: $text-blue;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.container{
+  padding: 0 1.4rem;
+  position: relative;
+}
+
+.stripe-bg {
+  background-image: repeating-linear-gradient(
+    45deg, 
+    $stripe-gray 0px, $stripe-gray 7px, 
+    $white 7px, $white 14px
+  );
+}

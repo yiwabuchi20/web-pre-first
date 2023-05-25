@@ -1,0 +1,16 @@
+@charset "UTF-8"; /* 文字コードの指定 */
+
+// Google Fontsの読み込み
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;900&family=Poppins:wght@800&display=swap");
+
+// Scssファイルの読み込み
+@import "base";
+@import "header";
+@import "contact";
+@import "interest";
+@import "point";
+@import "question";
+@import "reason";
+@import "faq";
+@import "footer";
+

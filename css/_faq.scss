@@ -1,0 +1,88 @@
+.faq {
+    padding-top:2.5rem;
+    h2{
+        margin:0 auto;
+        padding: 1.4rem 2.7rem;
+        font-size:1.8rem;
+        background-color: $contact-blue;
+        color:$white;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width:fit-content;
+        border-radius: 5px;
+    }
+}
+.accordion-width{
+    padding-bottom:4.8rem;
+}
+.accordion {
+    cursor: pointer;
+    margin: 0 .9rem;
+    padding:0;
+    line-height: calc(16 / 14);
+    font-size: 1.4rem;
+    
+    dl{
+        background-color: $white;
+        margin-bottom:2rem;
+    }
+
+    dt {
+        position: relative;
+        padding: 0.8rem 3.1rem 0.6rem 3.1rem;
+        border-bottom: solid 1px $border-gray;
+    }
+
+    dt::before {
+        content: "Q : ";
+        display: inline-block;
+        font-family: "Poppins";
+        font-weight: $font-midium;
+        text-indent: -2.5rem;
+
+    }
+
+    dt::after {
+        content: "+";
+        position: absolute;
+        top:10%;
+        right: 2.5%;
+        display: inline-block;
+        box-sizing: inherit;
+        font-weight: $font-black;
+        font-size:2.2rem;
+        font-family: "Noto Sans JP";
+    }
+    dt.open::after{
+        content: "ー";
+        font-size:1.4rem;
+        top:30%;
+    }
+
+    dt:hover{
+        opacity: .5;
+    }
+
+}
+
+
+.accordion-content {
+    display: none;
+    padding: 0.8rem 3.1rem 0.6rem 3.1rem;
+    position: relative;
+
+    margin: 0;
+    // text-indent: -2.5rem;
+    box-sizing: border-box;
+}
+
+.accordion-content::before {
+    content: "A : ";
+    font-family: "Poppins";
+    font-weight: $font-midium;
+    display: inline-block;
+    position: absolute;
+    text-indent: -2.5rem;
+
+}

@@ -1,0 +1,74 @@
+.dot-bg {
+    background-image: radial-gradient(#f5f5f5 20%, transparent 20%), radial-gradient(#f5f5f5 20%, transparent 20%);
+    background-size: 15px 15px;
+    background-position: 0 0, 7.5px 7.5px;
+    background-repeat: repeat;
+}
+
+.reason {
+    padding-top: 2.5rem;
+    padding-bottom: 4.8rem;
+    h2 {
+        margin: 0;
+        background-color: $catch-pink;
+        color: $white;
+        text-align: center;
+        border-radius: 5px;
+        line-height: calc(22 / 18);
+        font-size: 1.8rem;
+        font-weight: $font-black;
+        padding: .8rem 0;
+    }
+
+    h3 {
+        border-bottom: solid 1px $catch-pink;
+        width: fit-content;
+        margin: 0 auto;
+        padding-bottom: 1.1rem;
+        font-size: 1.6rem;
+    }
+    p{
+        line-height: calc(16 / 14);
+        font-size: 1.4rem;
+        font-weight: $font-midium;
+    }
+    span{
+        font-weight: bold;
+    }
+
+    ul {
+        list-style: none;
+        padding:0;
+        figure{
+            margin:0 auto;
+            width: fit-content;
+            img{
+                padding: 0 auto;
+            }
+        }
+        li {
+            p {
+                margin: 1.1rem 0;
+                padding: 0 2.5rem;
+            }
+            p:nth-child(2){
+                margin-top:1.8rem;
+            }
+        }
+        li:nth-child(n + 2){
+            margin-top:2.5rem;
+        }
+
+    }
+
+    .reason-content {
+        margin: 1.5rem .5rem;
+        padding-top: 3rem;
+        padding-bottom: 1.4rem;
+        border: solid 1px $border-gray;
+        border-radius: 5px;
+        background-color: $white;
+    }
+}
+
+  
